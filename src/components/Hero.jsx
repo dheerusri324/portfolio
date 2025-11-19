@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 const Hero = () => {
@@ -9,13 +9,39 @@ const Hero = () => {
           <span className="text-cyan-400 font-mono text-lg">Hi, my name is</span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 bg-clip-text text-transparent">
+        <motion.h1
+          className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 bg-clip-text text-transparent"
+          style={{
+            backgroundSize: '200% 200%',
+          }}
+          animate={{
+            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+        >
           Bala Dheeraj Chennavaram
-        </h1>
+        </motion.h1>
 
-        <h2 className="text-3xl md:text-5xl font-semibold text-gray-300 mb-6">
-          Always Exploring New Technologies
-        </h2>
+        <motion.h2
+          className="text-3xl md:text-5xl font-semibold mb-6 bg-gradient-to-r from-gray-200 via-cyan-300 to-gray-200 bg-clip-text text-transparent"
+          style={{
+            backgroundSize: '200% 200%',
+          }}
+          animate={{
+            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+        >
+          AI/ML Developer | Always Exploring New Technologies
+        </motion.h2>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
           Motivated Computer Science student with strong exposure to AI and machine learning. 
