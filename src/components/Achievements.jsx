@@ -10,6 +10,14 @@ const Achievements = () => {
   const achievements = [
     {
       icon: FaTrophy,
+      title: 'NPTEL Top 1% - AI: Concepts and Techniques',
+      description: 'Ranked in the top 1% among nation-wide participants in Artificial Intelligence: Concepts and Techniques',
+      date: '2025',
+      color: '#FFD700',
+      highlight: true,
+    },
+    {
+      icon: FaTrophy,
       title: 'NPTEL Top 2% - DSA using Java',
       description: 'Ranked in the top 2% among nation-wide participants in Data Structures and Algorithms using Java',
       date: '2024',
@@ -19,14 +27,14 @@ const Achievements = () => {
       icon: FaStar,
       title: 'NPTEL Top 5% - DBMS',
       description: 'Ranked in the top 5% among nation-wide participants in Database Management Systems',
-      date: '2023',
+      date: '2025',
       color: '#64FFDA',
     },
     {
       icon: FaMedal,
       title: 'Academic Excellence',
       description: 'Maintaining GPA of 8.73/10 at Vasavi College of Engineering, Hyderabad',
-      date: 'Aug 2024 - Present',
+      date: '2023 - Present',
       color: '#C0C0C0',
     },
   ]
@@ -49,12 +57,23 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.title}
-              className="glass glass-hover p-8 rounded-3xl relative overflow-hidden"
+              className={`glass glass-hover p-8 rounded-3xl relative overflow-hidden ${
+                achievement.highlight ? 'ring-2 ring-cyan-400 ring-offset-2 ring-offset-transparent' : ''
+              }`}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ delay: index * 0.1, duration: 0.5, ease: 'easeOut' }}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
+              {achievement.highlight && (
+                <motion.div
+                  className="absolute top-4 right-4 px-3 py-1 bg-cyan-400/20 text-cyan-400 text-xs font-bold rounded-full border border-cyan-400"
+                  animate={{ scale: [1, 1.05, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  NEW
+                </motion.div>
+              )}
               <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
                 <achievement.icon className="w-full h-full" style={{ color: achievement.color }} />
               </div>
