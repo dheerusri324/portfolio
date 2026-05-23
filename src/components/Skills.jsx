@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { FaReact, FaPython, FaJava, FaNodeJs, FaDocker, FaGitAlt } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiMongodb, SiPostgresql, SiTensorflow, SiKubernetes } from 'react-icons/si'
+import { SiJavascript, SiTypescript, SiMongodb, SiPostgresql, SiTensorflow, SiKubernetes, SiC, SiScikitlearn } from 'react-icons/si'
 
 const Skills = () => {
   const ref = useRef(null)
@@ -15,6 +15,7 @@ const Skills = () => {
         { name: 'Python', icon: FaPython, color: '#3776AB' },
         { name: 'Java', icon: FaJava, color: '#007396' },
         { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
+        { name: 'C', icon: SiC, color: '#A8B9CC' },
       ],
     },
     {
@@ -29,6 +30,7 @@ const Skills = () => {
       skills: [
         { name: 'TensorFlow', icon: SiTensorflow, color: '#FF6F00' },
         { name: 'PyTorch', icon: SiTensorflow, color: '#EE4C2C' },
+        { name: 'Isolation Forests', icon: SiScikitlearn, color: '#F7931E' },
       ],
     },
     {
