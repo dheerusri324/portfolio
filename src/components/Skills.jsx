@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { FaReact, FaPython, FaJava, FaNodeJs, FaDocker, FaGitAlt } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiMongodb, SiPostgresql, SiTensorflow, SiKubernetes, SiC, SiScikitlearn } from 'react-icons/si'
+import { FaReact, FaPython, FaJava, FaNodeJs, FaDocker, FaGitAlt, FaHtml5, FaCss3Alt, FaDatabase, FaBrain } from 'react-icons/fa'
+import { SiJavascript, SiTypescript, SiMongodb, SiPostgresql, SiTensorflow, SiKubernetes, SiC, SiScikitlearn, SiTailwindcss, SiFlask } from 'react-icons/si'
 
 const Skills = () => {
   const ref = useRef(null)
@@ -16,6 +16,7 @@ const Skills = () => {
         { name: 'Java', icon: FaJava, color: '#007396' },
         { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
         { name: 'C', icon: SiC, color: '#A8B9CC' },
+        { name: 'SQL', icon: FaDatabase, color: '#003B57' },
       ],
     },
     {
@@ -23,6 +24,10 @@ const Skills = () => {
       skills: [
         { name: 'React.js', icon: FaReact, color: '#61DAFB' },
         { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
+        { name: 'HTML5', icon: FaHtml5, color: '#E34F26' },
+        { name: 'CSS3', icon: FaCss3Alt, color: '#1572B6' },
+        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+        { name: 'Flask', icon: SiFlask, color: '#FFFFFF' },
       ],
     },
     {
@@ -31,13 +36,16 @@ const Skills = () => {
         { name: 'TensorFlow', icon: SiTensorflow, color: '#FF6F00' },
         { name: 'PyTorch', icon: SiTensorflow, color: '#EE4C2C' },
         { name: 'Isolation Forests', icon: SiScikitlearn, color: '#F7931E' },
+        { name: 'NLP', icon: FaBrain, color: '#FFB6C1' },
       ],
     },
     {
       title: 'Databases & Tools',
       skills: [
         { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
+        { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
         { name: 'Git', icon: FaGitAlt, color: '#F05032' },
+        { name: 'Docker', icon: FaDocker, color: '#2496ED' },
       ],
     },
   ]
