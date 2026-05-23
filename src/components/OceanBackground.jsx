@@ -5,11 +5,11 @@ const OceanBackground = () => {
   const { scrollYProgress } = useScroll()
   const [fish, setFish] = useState([])
   
-  // Transform scroll to depth (beach → shallow → deep ocean)
+  // Transform scroll to depth (dark surface → deep ocean)
   const backgroundColor = useTransform(
     scrollYProgress,
     [0, 0.3, 0.6, 1],
-    ['#87CEEB', '#4A90A4', '#1e3a5f', '#0a192f']
+    ['#0f172a', '#0c1f38', '#0a192f', '#020617']
   )
   
   const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0, 0.6])

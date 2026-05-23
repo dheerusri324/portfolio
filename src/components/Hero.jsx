@@ -9,7 +9,7 @@ const Hero = () => {
           <span className="text-cyan-400 font-mono text-lg">Hi, my name is</span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 bg-clip-text text-transparent animate-gradient">
+        <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-300 via-teal-300 to-blue-400 bg-clip-text text-transparent animate-gradient">
           Bala Dheeraj Chennavaram
         </h1>
 
