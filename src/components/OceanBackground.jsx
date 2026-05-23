@@ -100,10 +100,10 @@ const OceanBackground = () => {
       ))}
 
       {/* Bubbles floating up */}
-      {[...Array(15)].map((_, i) => (
+      {[...Array(35)].map((_, i) => (
         <motion.div
           key={`bubble-${i}`}
-          className="absolute rounded-full border border-cyan-400/30 bg-cyan-400/5"
+          className="absolute rounded-full border border-cyan-400/40 bg-cyan-400/10 shadow-[0_0_10px_rgba(100,255,218,0.2)]"
           style={{
             left: `${Math.random() * 100}%`,
             bottom: '-5%',

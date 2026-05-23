@@ -8,10 +8,12 @@ import Research from './components/Research'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import OceanBackground from './components/OceanBackground'
+import MouseGlow from './components/MouseGlow'
 
 function App() {
   return (
     <div className="relative min-h-screen text-white">
+      <MouseGlow />
       <OceanBackground />
       
       <main className="relative z-10">
