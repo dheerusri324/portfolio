@@ -12,7 +12,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = ['About', 'Skills', 'Projects', 'Achievements', 'Contact']
+  const navItems = ['About', 'Skills', 'Projects', 'OpenSource', 'Achievements', 'Contact']
 
   return (
     <motion.nav
