@@ -9,20 +9,20 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'SmartWaste360 - AI Waste Management Platform',
+      description: 'Full-stack AI-powered waste management platform with 70-90% accuracy through image recognition. Integrated ESP32 microcontrollers with HC-SR04 ultrasonic sensors for real-time bin-level detection and monitoring. Integrated Google Gemini AI for real-time waste classification. Features interactive mapping with Leaflet for route optimization, RESTful APIs with Flask and PostgreSQL, and deployed on Vercel and Render with CI/CD automation.',
+      tech: ['React.js', 'Flask', 'PostgreSQL', 'Gemini API', 'Leaflet', 'ESP32', 'Tailwind CSS'],
+      github: 'https://github.com/dheerusri324',
+      live: 'https://smartwaste360-frontend.vercel.app/',
+      gradient: 'from-cyan-500 to-blue-500',
+    },
+    {
       title: 'Text Emotion Classifier | NLP & Deep Learning',
       description: 'Built a Deep Learning NLP model to detect emotions in text using TensorFlow and Keras. Addressed dataset imbalance using Random Oversampling techniques and implemented a real-time command-line interface for instant predictions.',
       tech: ['Python', 'TensorFlow', 'Keras', 'NLP', 'Machine Learning'],
       github: 'https://github.com/dheerusri324/TextEmotionClassifier',
       live: null,
       gradient: 'from-blue-500 to-cyan-500',
-    },
-    {
-      title: 'SmartWaste360 - AI Waste Management Platform',
-      description: 'Full-stack AI-powered waste management platform with 70-90% accuracy through image recognition. Integrated Google Gemini AI for real-time waste classification. Features interactive mapping with Leaflet for route optimization, RESTful APIs with Flask and PostgreSQL, and deployed on Vercel and Render with CI/CD automation.',
-      tech: ['React.js', 'Flask', 'PostgreSQL', 'Gemini API', 'Leaflet', 'Tailwind CSS'],
-      github: 'https://github.com/dheerusri324',
-      live: 'https://smartwaste360-frontend.vercel.app/',
-      gradient: 'from-cyan-500 to-blue-500',
     },
     {
       title: 'System Anomaly Monitor',
