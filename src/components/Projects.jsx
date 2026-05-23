@@ -18,8 +18,8 @@ const Projects = () => {
     },
     {
       title: 'Text Emotion Classifier | NLP & Deep Learning',
-      description: 'A deep learning NLP model that classifies short text into six emotions (joy, sadness, anger, fear, love, surprise) with ~90-93% accuracy. Built with a Bidirectional LSTM on top of trainable word embeddings using TensorFlow and Keras. Addressed dataset imbalance with Random Oversampling, utilized SpatialDropout1D, and implemented an interactive command-line interface for real-time predictions.',
-      tech: ['Python', 'TensorFlow', 'Keras', 'Bidirectional LSTM', 'NLP', 'scikit-learn'],
+      description: 'A deep learning NLP model that classifies short text into six emotions (joy, sadness, anger, fear, love, surprise) with ~90-93% accuracy. Built with a Bidirectional LSTM on top of pre-trained GloVe embeddings using TensorFlow and Keras. Addressed dataset imbalance with Random Oversampling, utilized SpatialDropout1D, and implemented an interactive command-line interface for real-time predictions.',
+      tech: ['Python', 'TensorFlow', 'Keras', 'Bidirectional LSTM', 'GloVe', 'NLP', 'scikit-learn'],
       github: 'https://github.com/dheerusri324/TextEmotionClassifier',
       live: null,
       gradient: 'from-blue-500 to-cyan-500',
