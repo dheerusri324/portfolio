@@ -52,6 +52,7 @@ html {
 
 ::-webkit-scrollbar {
   width: 6px;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-track {

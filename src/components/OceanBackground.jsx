@@ -43,7 +43,7 @@ const OceanBackground = () => {
   }
 
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden">
+    <div className="fixed top-0 left-0 w-screen h-screen z-0 overflow-hidden">
       {/* Dynamic background that changes with scroll */}
       <motion.div
         className="absolute inset-0"
