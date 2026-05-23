@@ -116,9 +116,9 @@ const OceanBackground = () => {
             opacity: [0, 0.6, 0],
           }}
           transition={{
-            duration: 8 + Math.random() * 8,
+            duration: 15 + Math.random() * 15,
             repeat: Infinity,
-            delay: Math.random() * 8,
+            delay: Math.random() * 10,
             ease: 'linear',
           }}
         />
